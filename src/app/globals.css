@@ -4,6 +4,8 @@
 
 body {
   box-sizing: border-box;
+  --purple500: #896fe2;
+  --purple200: #e5dff9;
   --grey200: #eeee;
   --grey600: #666666;
   --white: #ffffff;
@@ -17,4 +19,47 @@ body {
   --orange400: #ff9000;
   --orange500: #ff7d34;
   --orange600: #fc6a00;
+}
+
+/* Toggle Switch */
+.toggle_button {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  width: 30px;
+  height: 15px;
+  margin: 0;
+  vertical-align: top;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.toggle_button::after {
+  content: "";
+
+  display: inline-block;
+  position: absolute;
+  left: 3px;
+  top: 24%;
+
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+
+  transform: translateX(0);
+  transition: 0.3s;
+}
+.toggle_button:checked::after {
+  transform: translateX(calc(100% + 9px));
+  background-color: #fff;
+}
+.toggle_button:checked {
+  background-color: transparent;
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
 }

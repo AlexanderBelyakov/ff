@@ -25,6 +25,10 @@ const config: Config = {
       animation: {},
       keyframes: {},
       colors: {
+        purple: {
+          200: "#e5dff9",
+          500: "#896fe2",
+        },
         grey2: "var(--grey200)",
         grey6: "var(--grey600)",
         white: "var(--white)",
