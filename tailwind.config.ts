@@ -29,6 +29,10 @@ const config: Config = {
           200: "#e5dff9",
           500: "#896fe2",
         },
+        gray: {
+          600: "#797979",
+          900: "#1F1F1F",
+        },
         grey2: "var(--grey200)",
         grey6: "var(--grey600)",
         white: "var(--white)",
