@@ -122,7 +122,7 @@ export default function Home() {
             className="border-t-[1px] border-purple-500 pt-4"
             key={el.id}
           >
-            <summary className="inline-flex font-medium text-[14px]">
+            <summary className="inline-flex font-medium text-[14px] w-full">
               {el.title}
               <Image
                 alt="arrow"
@@ -131,7 +131,7 @@ export default function Home() {
                 height="9"
                 decoding="async"
                 data-nimg="1"
-                className="aspect-square  ml-7"
+                className="aspect-square  ml-auto"
                 src="/arrow_back_2.svg"
               />
             </summary>
@@ -179,7 +179,7 @@ export default function Home() {
           <li className="text-[12px] leading-[140%] text-nowrap marker:text-purple-500  pr-5 target:marker:text-transparent">
             Отзывы
           </li>
-          <li className="text-[12px] leading-[140%] text-nowrap marker:text-purple-500  pr-5 target:marker:text-transparent">
+          <li className="text-[12px] leading-[140%] text-nowrap marker:text-purple-500  pr-5 target:marker:text-transparent list-none">
             Контакты
           </li>
           <li className="text-[12px] leading-[140%] text-nowrap marker:text-purple-500  pr-5 target:marker:text-transparent">
