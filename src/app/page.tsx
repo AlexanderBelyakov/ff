@@ -124,16 +124,6 @@ export default function Home() {
           >
             <summary className="inline-flex font-medium text-[14px] w-full">
               {el.title}
-              <Image
-                alt="arrow"
-                loading="lazy"
-                width="12"
-                height="9"
-                decoding="async"
-                data-nimg="1"
-                className="aspect-square  ml-auto"
-                src="/arrow_back_2.svg"
-              />
             </summary>
             <p className="text-[12px]">{el.content}</p>
           </details>

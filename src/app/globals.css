@@ -21,6 +21,59 @@ body {
   --orange600: #fc6a00;
 }
 
+@layer utilities {
+  details > summary::marker {
+    display: none !important;
+  }
+
+  summary::-webkit-details-marker {
+    /* Hides marker on Safari */
+    display: none;
+  }
+
+  summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    align-items: center;
+    transition: 1s transform ease;
+  }
+
+  @keyframes openDetails {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: fit-content;
+      opacity: 1;
+    }
+  }
+
+  details[open] > p {
+    animation: openDetails 0.5s ease forwards;
+  }
+
+  details > summary::after {
+    content: url("/arrow_back_2.svg");
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    transition: 0.3s transform ease;
+    transform: rotate(-90deg);
+  }
+
+  details[open] > summary::after {
+    align-items: end;
+    width: 12px;
+    height: 10px;
+    transform: rotate(0deg);
+    transition: 0.3s transform ease;
+  }
+}
+
 /* Toggle Switch */
 .toggle_button {
   position: relative;
