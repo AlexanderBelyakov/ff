@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       <section>
-        <ul className="flex flex-row flex-wrap text-gray-900 gap-x-5 gap-y-5  justify-center list-disc first:marker:text-transparent">
+        <ul className="flex flex-row flex-wrap text-gray-900 gap-x-5 gap-y-5 justify-center list-disc first:marker:text-transparent">
           <li className="text-[12px] leading-[140%] text-nowrap marker:text-purple-500  pr-5 target:marker:text-transparent">
             Главная
           </li>
@@ -204,7 +204,7 @@ export default function Home() {
             decoding="async"
             data-nimg="1"
             className="aspect-square"
-            src="/x.svg"
+            src="/X.svg"
           />
           <Image
             alt="facebook icon"

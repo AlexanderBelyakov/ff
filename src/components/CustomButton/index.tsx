@@ -13,7 +13,7 @@ const CustomButton = ({
       className=" flex items-center  z-[7] text-[12px] w-full justify-center rounded-md border border-transparent bg-purple-500 px-8 py-3 text-base  text-white hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
     >
       {text}
-      {hasArrow && (
+      {/* {hasArrow && (
         <Image
           src="/arrow_cool_down.svg"
           alt="arrow"
@@ -21,7 +21,7 @@ const CustomButton = ({
           height={12}
           className="ml-3"
         />
-      )}
+      )} */}
     </button>
   );
 };
